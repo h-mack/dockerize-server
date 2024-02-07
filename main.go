@@ -11,7 +11,7 @@ func main() {
 	m := http.NewServeMux()
 	corsMux := middlewareCors(m)
 
-	const addr = ":8000"
+	const addr = ":8080"
 
 	m.HandleFunc("/", handlePage)
 
